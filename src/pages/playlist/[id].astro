@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro"
 import PlayListItemCard from "../../components/PlayListItemCard.astro";
 import { allPlaylists, songs } from "../../lib/data";
 import MusicTable from "../../components/MusicTable.astro";
-import { CardPlayButton } from "../../components/CardPlayButton";
+import { CardPlayButton } from "../../components/Player/CardPlayButton";
 
 const { id } =Astro.params
 const playlist = allPlaylists.find(playlist => playlist.id === id)
@@ -58,4 +58,4 @@ const playlistSongs = songs.filter(song => song.albumId === playlist?.albumId)
       <MusicTable songs={playlistSongs}/>
     </section>
   </div>
-</Layout>../../components/player/CardPlayButton
+</Layout>../../components/player/CardPlayButton../../components/Player/CardPlayButton
